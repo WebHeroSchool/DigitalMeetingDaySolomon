@@ -101,6 +101,20 @@
 /***************Header*****************/
 /***************Section*****************/
 
+.main {
+    width: 1440px;
+    height: 397px;
+    background: #E3EAFE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-section {
+    flex-direction: column;
+    align-items: center;
+}
+
 .main__title {
     font-family: Roboto,Arial,sans-serif;
     font-weight: 500;
@@ -108,6 +122,9 @@
     line-height: 35px;
     text-align: center;
     color: #585858;
+    width: 645px;
+    padding-top: 55px;
+    margin: 0 0 40px 0;
 }
 
 .main__price {
@@ -116,12 +133,15 @@
     font-size: 30px;
     line-height: 35px;
     color: #263B83;
+    padding-right: 11px;
+    margin: 0 0 33px 0;
 }
 
 .main__button {
     color: #000;
     background: #FFDA45;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    margin: 0 0 18px 0;
 }
 
 .main__button-additional {
@@ -158,11 +178,292 @@
     transform: scaleY(1);
 }
 
-/***********************/
+.middle {
+    width: 1440px;
+    height: 327px;
+    background: #405DBB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle__img {
+    width: 514px;
+    height: 327px;
+    background: url("images/1.png") no-repeat;
+    margin-right: 18px;
+    background-position-x: 28px;
+}
+
+.middle-container {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 0 0 0;
+    margin-right: 15px;
+}
+
+.middle-container__title {
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFF;
+    margin: 0 0 20px 0;
+}
+
+.middle-container__description {
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFF;
+    text-align: left;
+    margin: 0;
+}
+
 .middle__button {
     color: #000;
     background: #FFDA45;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    padding: 16px 31px;
+}
+
+.bottom {
+    width: 1440px;
+    height: 953px;
+    background: #E3EAFE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom__title {
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #585858;
+    width: 451px;
+    margin: 0 0 78px 0;
+    padding-top: 89px;
+}
+
+.bottom-images {
+    display: flex;
+    flex-direction: column;
+    padding-left: 17px;
+}
+
+.up {
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.down {
+    display: flex;
+}
+
+.up__img, .down__img {
+    margin-right: 20px;
+}
+
+.up__img-2 {
+    background: url("images/2.png") no-repeat;
+    width: 280px;
+    height: 280px;
+}
+
+.up__img-3 {
+    background: url("images/3.png") no-repeat;
+    width: 280px;
+    height: 280px;
+}
+
+.up__img-4 {
+    background: url("images/4.png") no-repeat;
+    width: 280px;
+    height: 280px;
+}
+
+.up__img-5 {
+    background: url("images/5.png") no-repeat;
+    width: 280px;
+    height: 280px;
+}
+
+.down__img-6 {
+    background: url("images/6.png") no-repeat;
+    width: 280px;
+    height: 280px;
+}
+
+.down__img-7 {
+    background: url("images/7.png") no-repeat;
+    width: 280px;
+    height: 280px;
+}
+
+.down__img-8 {
+    background: url("images/8.png") no-repeat;
+    width: 280px;
+    height: 280px;
+}
+
+.down__img-9 {
+    background: url("images/9.png") no-repeat;
+    width: 280px;
+    height: 280px;
 }
 
 /***************Section*****************/
+
+/**************Footer**********************/
+
+.footer {
+    width: 1440px;
+    height: 250px;
+    background: #0E1E71;
+    display: flex;
+}
+
+.wrapper-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 43px;
+}
+
+.footer__nav {
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    text-decoration: none;
+    color: #E1E6E9;
+    position: relative;
+}
+
+.footer__nav:after {
+    content: "";
+    background: url("images/icon 3.svg") no-repeat;
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    left: -27px;
+    top: 0;
+}
+
+.number {
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E1E6E9;
+    margin: 0 20px 0 0;
+    padding-top: 6px;
+}
+
+.social__1 {
+    background: url("images/Icon 1.svg") no-repeat;
+    width: 52px;
+    height: 52px;
+    margin-right: 17px;
+}
+
+.social__2 {
+    background: url("images/Icon 2.svg") no-repeat;
+    width: 52px;
+    height: 52px;
+}
+
+.footer-left {
+    padding-left: 27px;
+    padding-top: 6px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/**************Footer**********************/
+
+@media (max-width: 320px) {
+
+    .menu {
+        display: none;
+    }
+
+    .header {
+        width: 320px;
+        height: 334px;
+        background: url("images/background Mobile.png") no-repeat;
+        background-size: auto;
+    }
+
+    .wrapper-header {
+        align-items: stretch;
+    }
+
+    .container {
+
+        padding-top: 63px;
+    }
+
+    .text-container {
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .header__title {
+        font-family: Roboto,Arial,sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 35px;
+        color: #E1E6E9;
+        width: 263px;
+        height: 35px;
+        margin-bottom: 4px;
+    }
+
+    .header__description {
+        font-family: Roboto,Arial,sans-serif;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #E1E6E9;
+        width: 212px;
+        height: 36px;
+    }
+
+    .button {
+        font-family: Roboto,Arial,sans-serif;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        text-decoration: none;
+        background: #E0036F;
+        padding: 14px 107px;
+    }
+
+}
