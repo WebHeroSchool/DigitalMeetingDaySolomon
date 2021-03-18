@@ -541,6 +541,7 @@
         background-position-y: 456px;
         background-blend-mode: lighten;
         box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+        z-index: 9999;
     }
 
     /* элементы меню */
