@@ -442,7 +442,7 @@
     }
 
     .wrapper-header {
-        align-items: stretch;
+        align-items: center;
     }
 
     .container {
@@ -504,7 +504,7 @@
         align-items: center;
         position: relative;
         top: 27px;
-        left: 91%;
+        left: 37vw;
         width: 35px;
         height: 26px;
         cursor: pointer;
@@ -938,7 +938,7 @@
     }
 
     .wrapper-header {
-        align-items: stretch;
+        align-items: center;
     }
 
     .container {
@@ -999,7 +999,7 @@
         align-items: center;
         position: relative;
         top: 6px;
-        left: 238px;
+        left: 39vw;
         width: 24px;
         height: 26px;
         cursor: pointer;
