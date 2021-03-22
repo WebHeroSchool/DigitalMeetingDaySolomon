@@ -868,6 +868,7 @@
 
     .wrapper-footer {
         margin-top: 21px;
+        padding: 0 43px;
     }
 
     .footer-left {
@@ -898,7 +899,7 @@
     .number {
         font-weight: 900;
         font-size: 12px;
-        line-height: 15px;
+        line-height: 17px;
         margin: 0 11px 0 0;
         padding-top: 0;
     }
@@ -947,7 +948,8 @@
 
     .text-container {
         align-items: center;
-        margin-bottom: 70px;
+        margin-bottom: 23px;
+        padding-top: 0;
     }
 
     .header__title {
@@ -1202,6 +1204,11 @@
         color: #000;
     }
 
+    .main__button-additional {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     .bottom {
         width: 100vw;
         height: 471px;
@@ -1343,6 +1350,7 @@
 
     .wrapper-footer {
         margin-top: 11px;
+        padding: 0 29px;
     }
 
     .footer-left {
@@ -1367,7 +1375,7 @@
     }
 
     .footer-right {
-        padding-top: 3px;
+        padding: 3px 0 0 0;
     }
 
     .number {
