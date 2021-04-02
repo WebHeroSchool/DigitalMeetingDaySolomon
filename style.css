@@ -2,7 +2,7 @@
   margin: 0 auto;
 }
 
-/***************Header*****************/
+/* **************Header**************** */
 
 #menu__toggle {
   display: none;
@@ -17,8 +17,8 @@
 }
 
 .header {
-  width:100vw;
-  height:839px;
+  width: 100vw;
+  height: 839px;
   background: url("images/img background.png") no-repeat #0E1E71 center;
   background-size: auto;
 }
@@ -97,21 +97,21 @@
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
-  background: #E0036F;
+  background: #e0036f;
   padding: 15px 66px;
-  transition: color .4s, background-color .6s;
+  transition: color 0.4s, background-color 0.6s;
   place-self: flex-end;
 }
 
 .button:hover {
   color: #E0036F;
-  background: #E1E6E9;
+  background: #e1e6e9;
 }
 
-/***************Header*****************/
-/***************Section*****************/
+/* **************Header**************** */
+/* **************Section**************** */
 
 .main {
   width: 100vw;
@@ -144,14 +144,14 @@
   font-weight: 900;
   font-size: 30px;
   line-height: 35px;
-  color: #263B83;
+  color: #263b83;
   padding-right: 11px;
   margin: 0 0 33px 0;
 }
 
 .main__button {
   color: #000;
-  background: #FFDA45;
+  background: #ffda45;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
   margin: 0 0 18px 0;
   place-self: auto;
@@ -167,23 +167,24 @@
   position: relative;
 }
 
-.main__button-additional:before, .main__button-additional:after {
+.main__button-additional:before,
+.main__button-additional:after {
   content: '';
   display: block;
   left: 0;
   position: absolute;
   width: 100%;
   background-color: #FFDA45;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
-.main__button-additional:before {
+.main__button-additional::before {
   height: 3px;
   transform: scaleY(0);
   bottom: -13px;
 }
 
-.main__button-additional:after {
+.main__button-additional::after {
   height: 0;
 }
 
@@ -222,7 +223,7 @@
   font-weight: 900;
   font-size: 30px;
   line-height: 35px;
-  color: #FFF;
+  color: #fff;
   margin: 0 0 20px 0;
 }
 
@@ -280,7 +281,8 @@
   display: flex;
 }
 
-.up__img, .down__img {
+.up__img,
+.down__img {
   margin-right: 20px;
   width: 280px;
   height: 280px;
@@ -334,14 +336,14 @@
   background-size: 100%;
 }
 
-/***************Section*****************/
+/* **************Section**************** */
 
-/**************Footer**********************/
+/* *************Footer********************* */
 
 .footer {
   width: 100vw;
   height: 250px;
-  background: #0E1E71;
+  background: #0e1e71;
   display: flex;
 }
 
@@ -364,7 +366,7 @@
   position: relative;
 }
 
-.footer__nav:after {
+.footer__nav::after {
   content: "";
   background: url("images/icon 3.svg") no-repeat;
   position: absolute;
@@ -526,20 +528,20 @@
     background-blend-mode: lighten;
     box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
     z-index: 9998;
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
   /* элементы меню */
   .menu__item {
     font-size: 30px;
     height: 38px;
-    color: #E3EAFE;
+    color: #e3eafe;
     text-decoration: none;
     padding: 18px;
     margin: 0;
   }
 
-  .menu__item:before {
+  .menu__item::before {
     bottom: -2px;
     width: 100%;
   }
@@ -574,13 +576,13 @@
     visibility: visible;
     right: 0;
     opacity: 1;
-    transition: opacity .5s ease-out;
+    transition: opacity 0.5s ease-out;
   }
 
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
   .middle {
@@ -706,7 +708,7 @@
     padding: 25px 34vw;
   }
 
-  /*************/
+  /* *********** */
 
   /* скрываем чекбокс */
   #menu__toggle {
@@ -740,7 +742,7 @@
     background-blend-mode: lighten;
     box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
     z-index: 9998;
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
   /* элементы меню */
@@ -788,20 +790,20 @@
     visibility: visible;
     right: 0;
     opacity: 1;
-    transition: opacity .5s ease-out;
+    transition: opacity 0.5s ease-out;
   }
 
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
   .menu__item {
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
-  /*************/
+  /* *********** */
 
   .main {
     width: 100vw;
@@ -954,10 +956,10 @@
     -moz-transform: scale(1.5);
     -o-transform: scale(1.5);
     transform: scale(1.5);
-    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -webkit-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+    -moz-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+    -o-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+    transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
   }
 
   .slide1 { background-image: url("images/2.png"); background-repeat: no-repeat; background-size: 100%;}
@@ -1001,10 +1003,10 @@
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: background ease-in-out .5s;
-    -moz-transition: background ease-in-out .5s;
-    -o-transition: background ease-in-out .5s;
-    transition: background ease-in-out .5s;
+    -webkit-transition: background ease-in-out 0.5s;
+    -moz-transition: background ease-in-out 0.5s;
+    -o-transition: background ease-in-out 0.5s;
+    transition: background ease-in-out 0.5s;
   }
 
   .bottom-images-mobile label:hover,
@@ -1031,7 +1033,7 @@
     border-radius: 50%;
   }
 
-  /******************************************/
+  /* **************************************** */
 
   .footer {
     width: 100vw;
@@ -1098,9 +1100,7 @@
     height: 30px;
     background-size: 30px;
   }
-
 }
-
 
 @media (max-width: 320px) {
 
@@ -1163,7 +1163,7 @@
     padding: 14px 107px;
   }
 
-  /*************/
+  /* *********** */
 
   /* скрываем чекбокс */
   #menu__toggle {
@@ -1272,25 +1272,25 @@
     visibility: visible;
     right: 0;
     opacity: 1;
-    transition: opacity .5s ease-out;
+    transition: opacity 0.5s ease-out;
   }
 
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
   .menu {
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
   .menu__item {
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
 
-  /*************/
+  /* *********** */
 
   .main {
     width: 100vw;
@@ -1407,7 +1407,7 @@
     display: none;
   }
 
-  /******************************************/
+  /* **************************************** */
 
   .bottom-images-mobile {
     display: block;
@@ -1443,10 +1443,10 @@
     -moz-transform: scale(1.5);
     -o-transform: scale(1.5);
     transform: scale(1.5);
-    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -webkit-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+    -moz-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+    -o-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+    transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
   }
 
   .slide1 { background-image: url("images/2.png"); background-repeat: no-repeat}
@@ -1489,10 +1489,10 @@
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: background ease-in-out .5s;
-    -moz-transition: background ease-in-out .5s;
-    -o-transition: background ease-in-out .5s;
-    transition: background ease-in-out .5s;
+    -webkit-transition: background ease-in-out 0.5s;
+    -moz-transition: background ease-in-out 0.5s;
+    -o-transition: background ease-in-out 0.5s;
+    transition: background ease-in-out 0.5s;
   }
 
   .bottom-images-mobile label:hover,
@@ -1519,7 +1519,7 @@
     border-radius: 50%;
   }
 
-  /******************************************/
+  /* **************************************** */
 
   .footer {
     width: 100vw;
