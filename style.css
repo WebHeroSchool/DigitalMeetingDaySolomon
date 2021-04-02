@@ -753,6 +753,12 @@
     background-color: #c8dbfb;
   }
 
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+
   .menu__item_active::after {
     display: none;
   }
@@ -776,12 +782,6 @@
     right: 0;
     opacity: 1;
     transition: opacity 0.5s ease-out;
-  }
-
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    transition-duration: 0.25s;
   }
 
   /* *********** */
@@ -1195,6 +1195,7 @@
     width: 100%;
     height: 3px;
     background-color: #fff;
+    transition-duration: 0.25s;
   }
 
   .menu__btn > span::before {
@@ -1274,12 +1275,6 @@
     right: 0;
     opacity: 1;
     transition: opacity 0.5s ease-out;
-  }
-
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    transition-duration: 0.25s;
   }
 
   /* *********** */
