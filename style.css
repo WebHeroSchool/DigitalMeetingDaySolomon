@@ -116,7 +116,7 @@
 .main {
   width: 100vw;
   height: 397px;
-  background: #E3EAFE;
+  background: #e3eafe;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,7 +195,7 @@
 .middle {
   width: 100vw;
   height: 327px;
-  background: #405DBB;
+  background: #405dbb;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -239,7 +239,7 @@
 
 .middle__button {
   color: #000;
-  background: #FFDA45;
+  background: #ffda45;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
   padding: 17px 31px;
   place-self: center;
@@ -249,7 +249,7 @@
 .bottom {
   width: 100vw;
   height: 953px;
-  background: #E3EAFE;
+  background: #e3eafe;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -543,6 +543,7 @@
   .menu__item::before {
     bottom: -2px;
     width: 100%;
+    display: none;
   }
 
   .menu__item:hover {
@@ -550,10 +551,6 @@
   }
 
   .menu__item_active::after {
-    display: none;
-  }
-
-  .menu__item::before {
     display: none;
   }
 
@@ -614,7 +611,8 @@
     height: 112vw;
   }
 
-  .up__img, .down__img {
+  .up__img,
+  .down__img {
     margin-right: 2%;
   }
 
@@ -729,7 +727,7 @@
     margin: 0;
     padding: 100px 0 0 0;
     text-align: center;
-    background: url("images/background Mobile.png") no-repeat #0E1E71;
+    background: url("images/background Mobile.png") no-repeat #0e1e71;
     background-position-y: 456px;
     background-position-x: center;
     background-blend-mode: lighten;
@@ -1066,7 +1064,7 @@
     padding: 0 0 0 18px;
   }
 
-  .footer__nav:after {
+  .footer__nav::after {
     background-size: 13px;
     width: 24px;
     height: 24px;
@@ -1232,6 +1230,7 @@
     background-blend-mode: lighten;
     box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
     z-index: 9998;
+    transition-duration: 0.25s;
   }
 
   /* элементы меню */
@@ -1286,10 +1285,6 @@
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
-    transition-duration: 0.25s;
-  }
-
-  .menu {
     transition-duration: 0.25s;
   }
 
@@ -1381,7 +1376,7 @@
     padding: 14px 58px;
     text-align: center;
     margin-right: 2px;
-    background-color: #FFDA45;
+    background-color: #ffda45;
     color: #000;
   }
 
@@ -1413,16 +1408,11 @@
   /* **************************************** */
 
   .bottom-images-mobile {
-    display: block;
-  }
-
-
-
-  .bottom-images-mobile {
     height: 260px;
     margin: 0 0 0 0;
     position: relative;
     width: 260px;
+    display: block;
   }
 
   .slider {
@@ -1430,10 +1420,10 @@
     overflow: hidden;
     position: relative;
     width: inherit;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-    -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 
   .slides {
@@ -1452,11 +1442,30 @@
     transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
   }
 
-  .slide1 { background-image: url("images/2.png"); background-repeat: no-repeat}
-  .slide2 { background-image: url("images/3.png"); background-repeat: no-repeat}
-  .slide3 { background-image: url("images/4.png"); background-repeat: no-repeat}
-  .slide4 { background-image: url("images/5.png"); background-repeat: no-repeat}
-  .slide5 { background-image: url("images/6.png"); background-repeat: no-repeat}
+  .slide1 {
+    background-image: url("images/2.png");
+    background-repeat: no-repeat
+  }
+
+  .slide2 {
+    background-image: url("images/3.png");
+    background-repeat: no-repeat
+  }
+
+  .slide3 {
+    background-image: url("images/4.png");
+    background-repeat: no-repeat
+  }
+
+  .slide4 {
+    background-image: url("images/5.png");
+    background-repeat: no-repeat
+  }
+
+  .slide5 {
+    background-image: url("images/6.png");
+    background-repeat: no-repeat
+  }
 
   #slide1:checked ~ .slider > .slide1,
   #slide2:checked ~ .slider > .slide2,
@@ -1507,7 +1516,7 @@
     background: #ddd;
   }
 
-  .bottom-images-mobile label:after {
+  .bottom-images-mobile label::after {
     border: 2px solid #ddd;
     content: " ";
     display: block;
@@ -1547,7 +1556,7 @@
     padding: 0 0 0 12px;
   }
 
-  .footer__nav:after {
+  .footer__nav::after {
     background-size: 9px;
     width: 20px;
     height: 20px;
