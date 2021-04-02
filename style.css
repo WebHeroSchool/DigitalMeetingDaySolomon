@@ -521,7 +521,7 @@
     margin: 0;
     padding: 100px 0 0 0;
     text-align: center;
-    background: url("images/background Mobile.png") no-repeat #0E1E71;
+    background: url("images/background Mobile.png") no-repeat #0e1e71;
     background-position-y: 456px;
     background-position-x: center;
     background-blend-mode: lighten;
@@ -642,10 +642,6 @@
     width: 100vw;
   }
 
-  .menu {
-    display: none;
-  }
-
   .header {
     width: 100vw;
     height: 501px;
@@ -737,7 +733,7 @@
     background-position-y: 456px;
     background-position-x: center;
     background-blend-mode: lighten;
-    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
     z-index: 9998;
     transition-duration: 0.25s;
   }
@@ -820,10 +816,6 @@
     padding: 0;
   }
 
-  .main__button-additional::before {
-    transform: scaleY(1);
-  }
-
   .main__button {
     color: #000;
     background: #FFDA45;
@@ -840,6 +832,7 @@
   .main__button-additional::before {
     height: 4px;
     bottom: -14px;
+    transform: scaleY(1);
   }
 
   .middle {
@@ -1033,9 +1026,9 @@
     background: #ddd;
   }
 
-  .bottom-images-mobile label:after {
+  .bottom-images-mobile label::after {
     border: 2px solid #ddd;
-    content: " ";
+    content: "";
     display: block;
     height: 12px;
     left: -4px;
@@ -1249,6 +1242,7 @@
     text-decoration: none;
     padding: 18px;
     margin: 0;
+    transition-duration: 0.25s;
   }
 
   .menu__item::before {
@@ -1298,11 +1292,6 @@
   .menu {
     transition-duration: 0.25s;
   }
-
-  .menu__item {
-    transition-duration: 0.25s;
-  }
-
 
   /* *********** */
 
