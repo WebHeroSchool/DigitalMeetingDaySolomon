@@ -19,7 +19,7 @@
 .header {
   width: 100vw;
   height: 839px;
-  background: url("images/img background.png") no-repeat #0E1E71 center;
+  background: url("images/img background.png") no-repeat #0e1e71 center;
   background-size: auto;
 }
 
@@ -111,6 +111,7 @@
 }
 
 /* **************Header**************** */
+
 /* **************Section**************** */
 
 .main {
@@ -188,7 +189,7 @@
   height: 0;
 }
 
-.main__button-additional:hover:before {
+.main__button-additional:hover::before {
   transform: scaleY(1);
 }
 
@@ -816,12 +817,13 @@
 
   .main__button {
     color: #000;
-    background: #FFDA45;
+    background: #ffda45;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
     font-size: 30px;
     padding: 24px 32vw;
     margin: 0 0 37px 0;
   }
+
   .main__button-additional {
     font-size: 30px;
     line-height: 46px;
@@ -1164,7 +1166,7 @@
     line-height: 18px;
     color: #fff;
     text-decoration: none;
-    background: #E0036F;
+    background: #e0036f;
     padding: 14px 107px;
   }
 
@@ -1224,11 +1226,11 @@
     margin: 0;
     padding: 100px 0 0 0;
     text-align: center;
-    background: url("images/background Mobile.png") no-repeat #0E1E71;
+    background: url("images/background Mobile.png") no-repeat #0e1e71;
     background-position-y: 456px;
     background-position-x: center;
     background-blend-mode: lighten;
-    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
     z-index: 9998;
     transition-duration: 0.25s;
   }
@@ -1247,6 +1249,7 @@
   .menu__item::before {
     bottom: -2px;
     width: 100%;
+    display: none;
   }
 
   .menu__item:hover {
@@ -1254,10 +1257,6 @@
   }
 
   .menu__item_active::after {
-    display: none;
-  }
-
-  .menu__item::before {
     display: none;
   }
 
@@ -1444,27 +1443,27 @@
 
   .slide1 {
     background-image: url("images/2.png");
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
   }
 
   .slide2 {
     background-image: url("images/3.png");
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
   }
 
   .slide3 {
     background-image: url("images/4.png");
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
   }
 
   .slide4 {
     background-image: url("images/5.png");
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
   }
 
   .slide5 {
     background-image: url("images/6.png");
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
   }
 
   #slide1:checked ~ .slider > .slide1,
